@@ -22,16 +22,19 @@ public class ControlAsiento {
         }
     }
 
-    public ControlAsiento(String idBus, int nF, int nC, double precio) {
+    public ControlAsiento(String idBus, int nF, int nC, double precio, Asiento[][] m) {
         this.idBus = idBus;
         this.nF = nF;
         this.nC = nC;
         this.precio = precio;
+        /*
         for (int i = 0; i < this.nF; i++) {
             for (int j = 0; j < this.nC; j++) {
                 as[i][j] = new Asiento();
             }
         }
+        */
+        this.as = m;
     }
 
     public String getIdBus() {
